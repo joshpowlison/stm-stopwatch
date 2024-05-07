@@ -1,0 +1,23 @@
+body
+{
+	margin:0;
+	padding:0;
+	font-family:monospace;
+}
+
+#timer
+{
+	background-color: rgba(0, 0, 0, 0.62);
+	color:white;
+	font-size:4em;
+	margin:0;
+	padding:.25em;
+	float:right;
+	text-align:right;
+	visibility:hidden;
+}
+
+#timer.show
+{
+	visibility:visible;
+}
