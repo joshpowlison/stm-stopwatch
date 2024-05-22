@@ -7,7 +7,7 @@ const moduleFunctions = {
 	"stopStopwatch": stopStopwatch,
 };
 
-Module.LoadModule(moduleFunctions);
+module.LoadModule(moduleFunctions);
 
 const name = 'Stopwatch';
 const timer = document.getElementById('timer');
@@ -64,7 +64,7 @@ async function adjustStopwatch(name, event)
 {
 	if(isNaN(event))
 	{
-		Module.F('Console.LogError', 'Timer.Adjust can only take a number, in ms. Passed in "' + JSON.stringify(event) + '".');
+		module.F('Console.LogError', 'Timer.Adjust can only take a number, in ms. Passed in "' + JSON.stringify(event) + '".');
 		return;
 	}
 	

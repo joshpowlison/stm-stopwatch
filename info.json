@@ -1,43 +1,4 @@
 {
 	"name": "Stopwatch",
-	"version": 1,
-	"coreFiles": [
-		"info.json",
-		"browser-source.html",
-		"script.js",
-		"styles.css"
-	],
-	"defaultFiles": [],
-	"commands": [
-		{
-			"name": "Stopwatch.Begin",
-			"accessMask": 0,
-			"function": "beginStopwatch"
-		},
-		{
-			"name": "Stopwatch.Continue",
-			"accessMask": 0,
-			"function": "continueStopwatch"
-		},
-		{
-			"name": "Stopwatch.Show",
-			"accessMask": 0,
-			"function": "showStopwatch"
-		},
-		{
-			"name": "Stopwatch.Hide",
-			"accessMask": 0,
-			"function": "hideStopwatch"
-		},
-		{
-			"name": "Stopwatch.Adjust",
-			"accessMask": 0,
-			"function": "adjustStopwatch"
-		},
-		{
-			"name": "Stopwatch.Stop",
-			"accessMask": 0,
-			"function": "stopStopwatch"
-		}
-	]
+	"version": 2
 }
