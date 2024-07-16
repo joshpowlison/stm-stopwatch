@@ -7,7 +7,7 @@ const moduleFunctions = {
 	"stopStopwatch": stopStopwatch,
 };
 
-module.LoadModule(moduleFunctions);
+module.addActions(moduleFunctions);
 
 const name = 'Stopwatch';
 const timer = document.getElementById('timer');
@@ -16,7 +16,7 @@ var timerStartedTimestamp = 0;
 var timerEndedTimestamp = 0;
 var active = false;
 
-async function beginStopwatch(name, event)
+async function beginStopwatch(event)
 {
 	active = true;
 	
@@ -26,7 +26,7 @@ async function beginStopwatch(name, event)
 	show();
 }
 
-async function continueStopwatch(name, event)
+async function continueStopwatch(event)
 {
 	active = true;
 	
@@ -41,18 +41,18 @@ async function continueStopwatch(name, event)
 	show();
 }
 
-async function showStopwatch(name, event)
+async function showStopwatch(event)
 {
 	updateTimer();
 	show();
 }
 
-async function hideStopwatch(name, event)
+async function hideStopwatch(event)
 {
 	timer.classList.remove('show');
 }
 
-async function stopStopwatch(name, event)
+async function stopStopwatch(event)
 {
 	active = false;
 	
@@ -60,7 +60,7 @@ async function stopStopwatch(name, event)
 	updateTimer();
 }
 
-async function adjustStopwatch(name, event)
+async function adjustStopwatch(event)
 {
 	if(isNaN(event))
 	{
